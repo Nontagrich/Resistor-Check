@@ -1,4 +1,5 @@
 #Input color 
+print("----------Input Color ----------")
 bar1 = input("Enter Bar1: ")
 bar2 = input("Enter Bar2: ")
 bar3 = input("Enter Bar3: ")
@@ -28,3 +29,8 @@ result_2 = resis + tierII[0][bar4]
 
 print("Resistance value of the Resistor: ")
 print('= ' + str(resis) + ' + ' + str(tierII[1][bar4]+' Ω'))
+
+# 2200 + 2%
+# 2.2k Ω
+# result_1 Ω - result_2 Ω
+
