@@ -16,7 +16,7 @@ resis = ( (tierI[0][bar1]*10) + tierI[0][bar2] ) * tierI[1][bar3]
 
 #discrepancy
 tierII = [
-    {'brown':(0.01)*resis,'red':(0.02)*resis,'yellow':(0.05)*resis,'green':(0.005)*resis,'blue':(0.0025),'gold':(0.05)*resis,'silver':(0.1)*resis,'non':(0.2)*resis},
+    {'brown':(0.01)*resis,'red':(0.02)*resis,'yellow':(0.05)*resis,'green':(0.005)*resis,'blue':(0.0025)*resis,'purple':(0.001)*resis,'gray':(0.0005)*resis,'gold':(0.05)*resis,'silver':(0.1)*resis,'non':(0.2)*resis},
     {'brown':'1%','red':'2%','gold':(0.05)*resis,'silver':(0.1)*resis,'non':(0.2)*resis}
 ]
 
