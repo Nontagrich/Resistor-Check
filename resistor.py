@@ -21,3 +21,5 @@ tierII = [
 
 result_1 = resis - tierII[0][bar4]
 result_2 = resis + tierII[0][bar4]
+
+print()
