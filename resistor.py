@@ -15,7 +15,7 @@ tierI = [
 try:
      resis = ( (tierI[0][bar1]*10) + tierI[0][bar2] ) * tierI[1][bar3]
 except KeyError:
-    print("---------- Enter Color Keyword Only ----------\n")
+    print("---------- Enter Color in Resistor Only ----------\n")
 
 #resistor
 resis = ( (tierI[0][bar1]*10) + tierI[0][bar2] ) * tierI[1][bar3]
@@ -31,7 +31,7 @@ try:
     result_1 = resis - tierII[0][bar4]
     result_2 = resis + tierII[0][bar4]
 except KeyError:
-    print("---------- Enter Color Keyword Only ----------\n")
+    print("---------- Enter Color in Resistor Only ----------\n")
 
 #result
 result_1 = resis - tierII[0][bar4]
@@ -39,7 +39,5 @@ result_2 = resis + tierII[0][bar4]
 
 print("Resistance value of the Resistor: ")
 print('= ' + str(resis) + ' + ' + str(tierII[1][bar4]+' Ω'))
-# 2.2k Ω
 print(int(resis)/1000 ,'k Ω')
-# result_1 Ω - result_2 Ω
 print("The resistance of this resistor is between " + str(result_1/1000) + 'k Ω' + " and "  + str(result_2/1000) + 'k Ω' + '\n')
