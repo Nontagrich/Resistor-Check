@@ -10,10 +10,12 @@ tierI = [
     {'black':0,'brown':1,'red':2,'orange':3,'yellow':4,'green':5,'blue':6,'purple':7,'gray':8,'white':9},
     {'black':1,'brown':10,'red':10**2,'orange':10**3,'yellow':10**4,'green':10**5,'blue':10**6,'purple':10**7,'gray':10**8,'white':10**9,'gold':10**-1,'silver':10**-2}
     ]
+
+#check1
 try:
      resis = ( (tierI[0][bar1]*10) + tierI[0][bar2] ) * tierI[1][bar3]
 except KeyError:
-    print("Enter Color Keyword Only")
+    print("---------- Enter Color Keyword Only ----------\n")
 
 #resistor
 resis = ( (tierI[0][bar1]*10) + tierI[0][bar2] ) * tierI[1][bar3]
@@ -24,6 +26,12 @@ tierII = [
     {'brown':'1%','red':'2%','yellow':'5%','green':'0.5%','blue':'0.25%','purple':'0.1%','gray':'0.05%','gold':'5%','silver':'10%','non':'20%'}
 ]
 
+#check2
+try:
+    result_1 = resis - tierII[0][bar4]
+    result_2 = resis + tierII[0][bar4]
+except KeyError:
+    print("---------- Enter Color Keyword Only ----------\n")
 
 #result
 result_1 = resis - tierII[0][bar4]
