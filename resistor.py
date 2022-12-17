@@ -4,19 +4,16 @@ bar1 = input("Enter Bar1: ")
 bar2 = input("Enter Bar2: ")
 bar3 = input("Enter Bar3: ")
 bar4 = input("Enter Bar4: ")
+
 #tier
 tierI = [
     {'black':0,'brown':1,'red':2,'orange':3,'yellow':4,'green':5,'blue':6,'purple':7,'gray':8,'white':9},
     {'black':1,'brown':10,'red':10**2,'orange':10**3,'yellow':10**4,'green':10**5,'blue':10**6,'purple':10**7,'gray':10**8,'white':10**9,'gold':10**-1,'silver':10**-2}
     ]
-i=0
-while i==0:
-    try:
-        resis = ( (tierI[0][bar1]*10) + tierI[0][bar2] ) * tierI[1][bar3]
-    except KeyError:
-        print("Oops!  That was no valid color.")
-        pass
-        break
+try:
+     resis = ( (tierI[0][bar1]*10) + tierI[0][bar2] ) * tierI[1][bar3]
+except KeyError:
+    print("Enter Color Keyword Only")
 
 #resistor
 resis = ( (tierI[0][bar1]*10) + tierI[0][bar2] ) * tierI[1][bar3]
@@ -34,7 +31,7 @@ result_2 = resis + tierII[0][bar4]
 
 print("Resistance value of the Resistor: ")
 print('= ' + str(resis) + ' + ' + str(tierII[1][bar4]+' Ω'))
-# 2.2k 立
-print(int(resis)/1000 ,'Ω k')
-# result_1 立 - result_2 立
-print("result_1 ",(int(resis)*0.98)/1000,'Ω k', "-","result_2 ",(int(resis)*1.02)/1000,'Ω k')
+# 2.2k Ω
+print(int(resis)/1000 ,'k Ω')
+# result_1 Ω - result_2 Ω
+print("The resistance of this resistor is between " + str(result_1/1000) + 'k Ω' + " and "  + str(result_2/1000) + 'k Ω' + '\n')
